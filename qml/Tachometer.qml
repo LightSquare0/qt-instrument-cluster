@@ -1,34 +1,52 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-//import Qt5Compat.GraphicalEffects
-//import QtQuick.Timeline
-//import QtQuick.Studio.Effects 1.0
-//import QTimeline
+import QtQuick 2.0
+import Qt5Compat.GraphicalEffects
 
 Item {
     width: 800
     height: 800
 
     Image {
+//        FontLoader { id: renaultLife; source: "fonts/RenaultLife-BoldItalic.ttf" }
         id: gauge
-        x: 0
-        y: 0
-        width: 800
-        height: 800
-        source: "images/gauge-speedo.svg"
+//        width: 800
+//        height: 800
+        source: "images/gauge-tacho.svg"
+        sourceSize: Qt.size(parent.width, parent.height)
         layer.enabled: true
-//        layer.effect: DropShadowEffect {
-//            id: dropShadow
-//            color: "#75000000"
-//            verticalOffset: 0
-//            horizontalOffset: 0
-//        }
+        layer.effect: DropShadow {
+            id: dropShadow
+            color: "#75000000"
+            verticalOffset: 0
+            horizontalOffset: 0
+        }
         antialiasing: true
-        sourceSize.height: 800
-        sourceSize.width: 800
         fillMode: Image.PreserveAspectFit
 
+        Image {
+            anchors.centerIn: gauge
+            id: numbers
+            source: "images/Numbers.svg"
+            antialiasing: true
+//            sourceSize.height: 7
+            fillMode: Image.PreserveAspectFit
 
+            ColorOverlay{
+                   anchors.fill: numbers
+                   source: numbers
+                   color: "#f85c1d"
+                   antialiasing: true
+               }
+        }
+
+
+        Glow {
+               anchors.fill: numbers
+               radius: 10
+               spread: 0.5
+    //           samples: 17
+               color: "#f85c1d"
+               source: numbers
+           }
 
         Image {
             id: center
@@ -88,7 +106,7 @@ Item {
 
 
                 Image {
-                    id: needle_1
+                    id: needle
                     x: -263
                     y: 146
                     source: "images/needle.svg"
@@ -97,45 +115,28 @@ Item {
                     rotation: 322.009
                     fillMode: Image.PreserveAspectFit
                 }
+
+                DropShadow {
+                        anchors.fill: needle
+                        horizontalOffset: 3
+                        verticalOffset: 3
+                        radius: 2.0
+                        spread: 0
+//                        samples: 17
+                        color: "#80000000"
+                        rotation: 322.009
+                        source: needle
+                    }
+
             }
         }
     }
 
-//    Timeline {
-//        id: speedoTimeline
-//        animations: [
-//            TimelineAnimation {
-//                id: timelineAnimation
-//                pingPong: true
-//                running: true
-//                duration: 1000
-//                loops: 1
-//                to: 2500
-//                from: 0
-//            }
-//        ]
-//        startFrame: 0
-//        endFrame: 2500
-//        enabled: true
-
-//        KeyframeGroup {
-//            target: rotator
-//            property: "rotation"
-//            Keyframe {
-//                frame: 0
-//                value: "-2"
-//            }
-
-//            Keyframe {
-//                frame: 2500
-//                value: "248"
-//            }
-//        }
-//    }
+//    Glow {
+//           anchors.fill: gauge
+//           radius: 8
+////           samples: 17
+//           color: "#f85c1d"
+//           source: gauge
+//       }
 }
-
-/*##^##
-Designer {
-    D{i:0;formeditorZoom:0.66}D{i:5}D{i:4}D{i:3}D{i:1}D{i:6}
-}
-##^##*/

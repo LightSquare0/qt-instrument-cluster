@@ -23,3 +23,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     ASCM.h \
     Rotator.h
+
+DISTFILES += \
+    qml/Tachometer.qml

@@ -18,6 +18,12 @@ Rectangle {
         x: 1052
         y: 140
     }
+     Tachometer {
+         id: tachometer
+         x: 50
+         y: 140
+     }
+
 }
 }
 
