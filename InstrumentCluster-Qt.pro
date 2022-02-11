@@ -25,4 +25,8 @@ HEADERS += \
     Rotator.h
 
 DISTFILES += \
-    qml/Tachometer.qml
+    qml/Gauge.qml \
+    qml/Rotator.qml \
+    qml/SpeedometerNew.qml \
+    qml/Tachometer.qml \
+    qml/TachometerNew.qml

@@ -8,8 +8,6 @@ Item {
     Image {
 //        FontLoader { id: renaultLife; source: "fonts/RenaultLife-BoldItalic.ttf" }
         id: gauge
-//        width: 800
-//        height: 800
         source: "images/gauge-tacho.svg"
         sourceSize: Qt.size(parent.width, parent.height)
         layer.enabled: true
@@ -25,7 +23,7 @@ Item {
         Image {
             anchors.centerIn: gauge
             id: numbers
-            source: "images/Numbers.svg"
+            source: "images/numbers.svg"
             antialiasing: true
 //            sourceSize.height: 7
             fillMode: Image.PreserveAspectFit

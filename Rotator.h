@@ -22,15 +22,18 @@ public:
     Rotator() {
          timer = new QTimer(this);
              connect(timer, &QTimer::timeout, this, &Rotator::handleTimer);
-             timer->start(200);
+             timer->start(100);
     }
 
     void handleTimer(){
 //        setRotation(m_rotation + 250.0);
         SPageFilePhysics* pf = (SPageFilePhysics*)m_physics.mapFileBuffer;
-        qDebug() << "timer update" << pf->rpms;
-        qDebug() << (float)pf->rpms / 7500.0f;
-        setRotation(lerp(10.0f, 130.0f, (float)pf->rpms / 7500.0f));
+//        qDebug() << "timer update" << pf->rpms;
+//        qDebug() << (float)pf->rpms / 7500.0f;
+//        setRotation(lerp(10.0f, 130.0f, (float)pf->rpms / 7500.0f));
+        qDebug() << "speed" << pf->speedKmh;
+        setRotation(lerp(-40.0f, 210.0f, (float)pf->speedKmh / 250.0f));
+//        setRotation(-40.0);
     }
 
     void setRotation(const float &value){

@@ -38,8 +38,8 @@ Window {
     visible: true
     title: "InstrumentCluster"
 
-    Screen01 {
-    }
+//    Screen01 {
+//    }
 
 }
 
