@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.8;}
+	.st1{opacity:0;}
+	.st2{fill:#F0F0F0;}
+	.st3{fill:none;stroke:#303030;stroke-width:5.5;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#303030;stroke-width:3.5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#303030;stroke-width:15;stroke-miterlimit:10;}
+	.st6{fill:#A33B38;stroke:#E0211B;stroke-width:15;stroke-miterlimit:10;}
+	.st7{fill:#303030;}
+	.st8{fill:#E0211B;}
+</style>
+<g id="Fuel-gauge" class="st0">
+	<g class="st1">
+		<ellipse class="st2" cx="199.1" cy="200.3" rx="199.6" ry="200.3"/>
+	</g>
+	<g id="Fuel-markings-lines">
+		<g id="fuel-lines">
+			<line class="st3" x1="400" y1="200.3" x2="373.1" y2="200.3"/>
+			<line class="st4" x1="396.3" y1="161.8" x2="369.9" y2="167"/>
+			<line class="st4" x1="385.4" y1="124.7" x2="360.4" y2="134.9"/>
+			<line class="st4" x1="367.6" y1="90.5" x2="345" y2="105.2"/>
+			<line class="st5" x1="342.6" y1="61.2" x2="325.2" y2="78"/>
+			<line class="st4" x1="395.6" y1="242.2" x2="369.3" y2="236.6"/>
+			<line class="st4" x1="382.6" y1="282.3" x2="358" y2="271.3"/>
+			<line class="st4" x1="361.6" y1="318.8" x2="339.9" y2="302.9"/>
+			<line class="st6" x1="332.6" y1="349.1" x2="316.4" y2="331.1"/>
+		</g>
+		<g id="fuel-markings">
+			<g id="Fuel-pump">
+				<path class="st7" d="M297.3,224.2H325c0.2,0,0.4-0.2,0.4-0.4v-0.7c0-0.8-0.6-1.4-1.4-1.4h-25.6c-0.8,0-1.4,0.6-1.4,1.4v0.7
+					C296.9,224,297.1,224.2,297.3,224.2z"/>
+				<path class="st7" d="M321.2,176.3h-20.1c-1.4,0-2.5,1.1-2.5,2.5v42.8h25.1v-42.8C323.7,177.5,322.6,176.3,321.2,176.3z
+					 M321.7,191.1c0,1.1-0.9,2-2,2h-17c-1.1,0-2-0.9-2-2v-10.7c0-1.1,0.9-2,2-2h17c1.1,0,2,0.9,2,2V191.1z"/>
+				<path class="st7" d="M332.9,185.7c0,0.4,0.3,0.7,0.7,0.8c2.7,0.8,6,5.7,6,8.3v20c0,2.2-1.6,4.2-3.8,4.4
+					c-2.5,0.2-4.6-1.7-4.6-4.2V199c0-4.2-3.4-7.6-7.5-7.6v3.4c2.3,0,4.2,1.9,4.2,4.2v15.7c0,4,3,7.5,7,7.8c4.4,0.3,8-3.2,8-7.5
+					v-20.1h1.7c0-4.3-6.3-9.3-10.7-10C333.4,184.7,332.9,185.2,332.9,185.7L332.9,185.7z"/>
+			</g>
+			<g>
+				<path class="st7" d="M298.4,87v-3.9h8.9v34.2h-4.3V87H298.4z"/>
+			</g>
+			<g>
+				<path class="st8" d="M310.7,315.7l-7.8-13.5h-5.2v13.5h-4.3v-32.9H304c2.5,0,4.6,0.4,6.3,1.3c1.7,0.9,3,2,3.8,3.5
+					c0.8,1.4,1.3,3.1,1.3,5c0,2.3-0.7,4.3-2,6c-1.3,1.7-3.3,2.9-5.9,3.4l8.2,13.8H310.7z M297.7,298.8h6.3c2.3,0,4.1-0.6,5.2-1.7
+					c1.2-1.1,1.7-2.7,1.7-4.6c0-2-0.6-3.5-1.7-4.5c-1.1-1.1-2.9-1.6-5.3-1.6h-6.3V298.8z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

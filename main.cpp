@@ -27,13 +27,6 @@ int main(int argc, char *argv[])
 {
     initPhysics();
 
-//    while (true)
-//       {
-//           SPageFilePhysics* pf = (SPageFilePhysics*)m_physics.mapFileBuffer;
-//           std::cout << pf->rpms << std::endl;
-//           Sleep(50);
-//       }
-
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;

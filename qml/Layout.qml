@@ -27,40 +27,48 @@ ApplicationWindow {
 
     GridLayout {
         id: grid
-        columns: 1
-        width: parent.width
-        height: parent.height
+        columns: 3
+        anchors.centerIn: parent
+        columnSpacing: -(appWindow.fontSize * 20)
 
-        //        Speedometer {
-        //            id: speedometer
-        //            x: 1052
-        //            y: 140
-        //        }
-        //        Tachometer {
-        //            id: tachometer
-        //            x: 50
-        //            y: 140
-        //        }
         Row {
-            Layout.alignment: Qt.AlignCenter
             TachometerNew {
-                width: appWindow.fontSize * 76
-                height: appWindow.fontSize * 76
-                //                Rectangle {
-                //                    width: parent.width
-                //                    height: parent.height
-                //                    color: "blue"
-                //                }
+                width: appWindow.fontSize * 76 - 100
+                height: appWindow.fontSize * 76 - 100
             }
+        }
 
+        Row {
+            Layout.alignment: Qt.AlignTop
+            Layout.topMargin: -(appWindow.fontSize * 5)
+            z: -1
+            Image {
+                id: topContainer
+                source: "images/top-container.svg"
+                fillMode: Image.PreserveAspectFit
+                sourceSize: Qt.size(800, 400)
+                width: appWindow.fontSize * 80
+                height: appWindow.fontSize * 25
+                RowLayout {
+                    spacing: appWindow.fontSize * 10
+                    anchors.centerIn: parent
+                    Layout.alignment: Qt.AlignCenter
+                    Fuel {
+                        width: appWindow.fontSize * 28
+                        height: appWindow.fontSize * 28
+                    }
+                    Coolant {
+                        width: appWindow.fontSize * 28
+                        height: appWindow.fontSize * 28
+                    }
+                }
+            }
+        }
+
+        Row {
             SpeedometerNew {
-                width: appWindow.fontSize * 75
-                height: appWindow.fontSize * 76
-                //                Rectangle {
-                //                    width: parent.width
-                //                    height: parent.height
-                //                    color: "red"
-                //                }
+                width: appWindow.fontSize * 76 - 100
+                height: appWindow.fontSize * 76 - 100
             }
         }
     }
