@@ -18,11 +18,18 @@ qt_add_qml_module(cluster
 	VERSION 1.0
 	QML_FILES
 		qml/main.qml
+		qml/BottomBar.qml
+		qml/Components/StatProgressBar.qml
+		qml/Components/Stat.qml
 		qml/Utils/RoundedShape.qml
-		qml/Utils/Rectanglec.qml
 	RESOURCES
     images/MainGradient.png
-		fonts/LexendDeca.ttf
+		icons/gas.svg
+		icons/odometer.svg
+		icons/thermostat.svg
+		icons/trip.svg
+		fonts/LexendDeca-Light.ttf
+		fonts/LexendDeca-Regular.ttf
 	)
 
 target_link_libraries(cluster PUBLIC Qt6::Gui Qt6::Quick Qt6::Core5Compat)
