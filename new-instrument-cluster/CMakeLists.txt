@@ -18,6 +18,8 @@ qt_add_qml_module(cluster
 	VERSION 1.0
 	QML_FILES
 		qml/main.qml
+		qml/Styles/qmldir
+		qml/Styles/Theme.qml
 		qml/BottomBar.qml
 		qml/Components/StatProgressBar.qml
 		qml/Components/Stat.qml

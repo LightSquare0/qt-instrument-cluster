@@ -1,12 +1,10 @@
+import "../Styles" as Styles
 import Qt5Compat.GraphicalEffects
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Shapes
 
 ProgressBar {
-    // implicitWidth: parent.width
-    // implicitHeight: parent.height - 6
-
     id: progress
 
     property var propValue: 0.6
@@ -18,8 +16,8 @@ ProgressBar {
 
     background: Rectangle {
         radius: 20
-        color: "#414141"
-        border.color: "#414141"
+        color: Styles.Theme.secondaryGray
+        border.color: Styles.Theme.secondaryGray
         border.width: propBorderWidth
         implicitWidth: propWidth
         implicitHeight: propHeight
@@ -31,10 +29,10 @@ ProgressBar {
             anchors.verticalCenter: parent.verticalCenter
             width: progress.visualPosition * parent.width
             height: parent.height
-            border.color: "#414141"
+            border.color: Styles.Theme.secondaryGray
             border.width: propBorderWidth
             radius: 20
-            color: "#FF7324"
+            color: Styles.Theme.primaryOrange
             opacity: 0.7
         }
 

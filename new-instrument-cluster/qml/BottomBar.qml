@@ -1,5 +1,5 @@
-import "../qml/Components" as Components
-import "../qml/Utils" as Utils
+import "./Components" as Components
+import "./Utils" as Utils
 import Qt5Compat.GraphicalEffects
 import QtQuick
 import QtQuick.Controls
