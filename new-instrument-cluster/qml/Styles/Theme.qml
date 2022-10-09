@@ -2,7 +2,7 @@ import QtQuick
 pragma Singleton
 
 QtObject {
-    property string primaryOrange: "#FF7324"
-    property string secondaryGray: "#414141"
-    // property color accentLightGray: 
+    property color primaryOrange: "#FF7324"
+    property color secondaryGray: "#414141"
+    property color primaryDarkGray: "#1A1A1A"
 }

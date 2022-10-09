@@ -1,4 +1,4 @@
-import "../qml/Utils" as Utils
+import "./Utils" as Utils
 import Qt5Compat.GraphicalEffects
 import QtQuick
 import QtQuick.Controls
@@ -15,6 +15,8 @@ ApplicationWindow {
         anchors.fill: parent
         source: "qrc:/resources/images/MainGradient.png"
     }
+
+    MainView {}
 
     BottomBar {}
 }

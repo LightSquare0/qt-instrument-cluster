@@ -13,6 +13,8 @@ qt_add_executable(cluster
 		main.cpp
 	)
 
+#set(QML2_IMPORT_PATH ${CMAKE_SOURCE_DIR}/qml)
+
 qt_add_qml_module(cluster
 	URI resources 
 	VERSION 1.0
@@ -21,8 +23,10 @@ qt_add_qml_module(cluster
 		qml/Styles/qmldir
 		qml/Styles/Theme.qml
 		qml/BottomBar.qml
+		qml/MainView.qml
 		qml/Components/StatProgressBar.qml
 		qml/Components/Stat.qml
+		qml/Components/Gauge.qml
 		qml/Utils/RoundedShape.qml
 	RESOURCES
     images/MainGradient.png

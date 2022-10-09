@@ -6,16 +6,16 @@ RowLayout {
     property var value
     property var type
 
-    Layout.alignment: Qt.AlignVCenter
+    // Layout.alignment: Qt.AlignVCenter
     spacing: 6
 
     Image {
         source: imgSource
         fillMode: Image.PreserveAspectFit
-        sourceSize.width: 36
-        sourceSize.height: 36
-        width: 30
-        height: 30
+        sourceSize.width: 32
+        sourceSize.height: 32
+        width: 26 
+        height: 26
     }
 
     Text {

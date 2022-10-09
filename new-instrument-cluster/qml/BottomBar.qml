@@ -20,7 +20,6 @@ Control {
     }
 
     contentItem: RowLayout {
-        Layout.alignment: Qt.AlignVCenter
         spacing: 20
 
         Components.Stat {
@@ -31,16 +30,27 @@ Control {
             type: "km"
         }
 
-        Components.StatProgressBar {
-            id: coolantTemp
+        RowLayout {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            Layout.rightMargin: 100
+            Layout.leftMargin: 100
+            spacing: 20
 
-            propValue: 0.8
-        }
+            Components.StatProgressBar {
+                id: coolantTemp
 
-        Components.StatProgressBar {
-            id: gasLevel 
+                imgSource: "qrc:/resources/icons/thermostat.svg"
+                propValue: 0.3
+            }
 
-            propValue: 0.8
+            Components.StatProgressBar {
+                id: gasLevel
+
+                imgSource: "qrc:/resources/icons/gas.svg"
+                propValue: 0.8
+            }
+
         }
 
         Components.Stat {

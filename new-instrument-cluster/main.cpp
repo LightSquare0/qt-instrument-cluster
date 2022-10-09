@@ -9,6 +9,8 @@ int main(int argc, char *argv[])
 {
   QGuiApplication app(argc, argv);
 
+  qmlRegisterSingletonType(QUrl("qrc:/resources/qml/Styles/Theme.qml"), "Theme", 1, 0, "Theme");
+
   if (QFile("resources/fonts/LexendDeca-Light.ttf").exists())
   {
     QFontDatabase::addApplicationFont("resources/fonts/LexendDeca-Light.ttf");
