@@ -10,8 +10,8 @@ Control {
         Gauge {
         }
 
-        Gauge {
-        }
+        // Gauge {
+        // }
 
     }
 
