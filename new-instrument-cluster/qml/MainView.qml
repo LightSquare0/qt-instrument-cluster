@@ -8,10 +8,12 @@ Control {
 
     contentItem: RowLayout {
         Gauge {
+            type: "speedometer"
         }
 
-        // Gauge {
-        // }
+        Gauge {
+            type: "tachometer"
+        }
 
     }
 

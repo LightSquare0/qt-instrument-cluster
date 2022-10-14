@@ -1,3 +1,4 @@
+import Qt5Compat.GraphicalEffects
 import QtQuick
 import QtQuick.Layouts
 import Theme
@@ -7,13 +8,19 @@ Rectangle {
 
     property int steps: 72
     property string type: "speedometer"
-    property int text: 250
+    property int text: {
+        if (base.type == "speedometer")
+            return 250;
+        else
+            return 6;
+    }
 
     function setText(text) {
-        if (base.type == "speedometer") {
+        if (base.type == "speedometer")
             base.text -= 20;
-            return (text -= 20).toString();
-        }
+        else
+            base.text -= 1;
+        return base.text;
     }
 
     width: 520
@@ -50,22 +57,35 @@ Rectangle {
         Repeater {
             id: labels
 
-            property string localText
+            property int oldIndex
 
             onItemAdded: {
-                if (index % 4 != 0)
-                    return ;
+                if (base.type == "speedometer") {
+                    if (index % 4 != 0)
+                        return ;
 
-                if (index == 12) {
-                    console.log(index);
-                    item.text = base.text;
-                    return ;
+                    if (index == 12) {
+                        item.text = base.text;
+                        return ;
+                    }
+                    if (index > 12 && index <= 60) {
+                        item.text = base.setText(base.text);
+                        return ;
+                    }
                 }
-                if (index > 12 && index <= 60) {
-                    item.text = base.setText(base.text);
-                    return ;
+                if (base.type == "tachometer") {
+                    if (index == 12) {
+                        console.log(index);
+                        oldIndex = index;
+                        item.text = base.text;
+                        return ;
+                    }
+                    if (oldIndex + 8 == index && index > 12 && index <= 60) {
+                        oldIndex = index;
+                        item.text = base.setText(base.text);
+                        return ;
+                    }
                 }
-                console.log(index, base.text);
             }
             model: steps
 
@@ -79,6 +99,9 @@ Rectangle {
 
         }
 
+    }
+
+    GaugeWidget {
     }
 
 }

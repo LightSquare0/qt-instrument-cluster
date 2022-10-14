@@ -27,6 +27,7 @@ qt_add_qml_module(cluster
 		qml/Components/StatProgressBar.qml
 		qml/Components/Stat.qml
 		qml/Components/Gauge.qml
+		qml/Components/GaugeWidget.qml
 		qml/Utils/RoundedShape.qml
 	RESOURCES
     images/MainGradient.png
