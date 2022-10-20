@@ -10,13 +10,10 @@ int main(int argc, char *argv[])
   QGuiApplication app(argc, argv);
 
   qmlRegisterSingletonType(QUrl("qrc:/resources/qml/Styles/Theme.qml"), "Theme", 1, 0, "Theme");
-
-  if (QFile("resources/fonts/LexendDeca-Light.ttf").exists())
+  
+  if (QFontDatabase::addApplicationFont(":/resources/fonts/LexendDeca-Light.ttf") != -1 && QFontDatabase::addApplicationFont(":/resources/fonts/LexendDeca-Regular.ttf") != -1)
   {
-    qDebug() << QFontDatabase::addApplicationFont("resources/fonts/LexendDeca-Light.ttf");
-    qDebug() << QFontDatabase::addApplicationFont("resources/fonts/LexendDeca-Regular.ttf");
-    QFont LexendLight("Lexend Deca Light");
-    QFont LexendRegular("Lexend Deca");
+    QFont LexendLight("Lexend Deca", 16, QFont::Light);
     QGuiApplication::setFont(LexendLight);
     qDebug() << "Font loaded.";
   }

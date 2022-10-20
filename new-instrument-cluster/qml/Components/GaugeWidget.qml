@@ -21,9 +21,9 @@ Rectangle {
         Text {
             text: centerWidget.parent.type == "speedometer" ? "84" : "1925"
             font.pixelSize: 96
+            font.weight: 400
             color: Theme.primaryOrange
             anchors.centerIn: parent
-            font.family: "Lexend Deca"
         }
 
         Text {

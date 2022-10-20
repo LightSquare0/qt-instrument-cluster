@@ -5,15 +5,16 @@ project(instrumentcluster VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+if (APPLE) 
+	set(Qt6_DIR "/Users/samper2/Qt/6.4.0/macos/lib/cmake/Qt6/")
+endif()
 
-find_package(Qt6 6.3 COMPONENTS Quick Gui Core5Compat REQUIRED)
+find_package(Qt6 6.4 COMPONENTS Quick Gui Core5Compat REQUIRED)
 qt_standard_project_setup()
 
 qt_add_executable(cluster
 		main.cpp
 	)
-
-#set(QML2_IMPORT_PATH ${CMAKE_SOURCE_DIR}/qml)
 
 qt_add_qml_module(cluster
 	URI resources 

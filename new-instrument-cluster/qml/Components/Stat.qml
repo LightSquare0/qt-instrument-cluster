@@ -2,9 +2,9 @@ import QtQuick
 import QtQuick.Layouts
 
 RowLayout {
-    property var imgSource
-    property var value
-    property var type
+    property var imgSource: "qrc:/resources/icons/trip.svg"
+    property var value: "test"
+    property var type: "test"
 
     // Layout.alignment: Qt.AlignVCenter
     spacing: 6
