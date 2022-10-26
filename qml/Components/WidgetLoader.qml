@@ -13,7 +13,7 @@ FilledItem {
         orientation: Qt.Vertical
         currentIndex: 0
         anchors.fill: parent
-
+        focus: base.focused
         BigMeter {
         }
 

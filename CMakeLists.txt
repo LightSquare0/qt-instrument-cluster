@@ -30,6 +30,8 @@ qt_add_qml_module(cluster
 		qml/Components/Gauge.qml
 		qml/Components/GaugeWidget.qml
 		qml/Components/WidgetLoader.qml
+		qml/Components/Needle.qml
+		qml/Components/Rotator.qml
 		qml/Widgets/BigMeter.qml
 		qml/Widgets/TripComputer.qml
 		qml/Utils/RoundedShape.qml

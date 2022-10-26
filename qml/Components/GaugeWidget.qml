@@ -1,7 +1,8 @@
+import "../Widgets"
+import "../Components"
 import Qt5Compat.GraphicalEffects
 import QtQuick
 import QtQuick.Layouts
-import "../Widgets"
 import Theme
 
 Rectangle {
@@ -15,7 +16,9 @@ Rectangle {
     layer.enabled: true
 
     // BigMeter{}
-    WidgetLoader{}
+
+    WidgetLoader {
+    }
 
     layer.effect: DropShadow {
         transparentBorder: true

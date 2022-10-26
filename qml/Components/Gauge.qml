@@ -6,6 +6,7 @@ import Theme
 Rectangle {
     id: base
 
+    property bool focused
     property int steps: 72
     property string type: "speedometer"
     property int text: {
@@ -99,6 +100,9 @@ Rectangle {
 
         }
 
+    }
+
+    Rotator {
     }
 
     GaugeWidget {
