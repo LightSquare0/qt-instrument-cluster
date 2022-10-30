@@ -9,6 +9,7 @@ import Theme
 Rectangle {
 
     anchors.horizontalCenter: parent.horizontalCenter
+    anchors.bottom: parent.bottom
     width: 5
     height: 100
     color: Theme.primaryOrange

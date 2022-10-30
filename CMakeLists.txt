@@ -9,11 +9,16 @@ if (APPLE)
 	set(Qt6_DIR "/Users/samper2/Qt/6.4.0/macos/lib/cmake/Qt6/")
 endif()
 
+include_directories( .
+)
+
 find_package(Qt6 6.4 COMPONENTS Quick Gui Core5Compat REQUIRED)
 qt_standard_project_setup()
 
 qt_add_executable(cluster
 		main.cpp
+		Vehicle.h
+		Vehicle.cpp
 	)
 
 qt_add_qml_module(cluster

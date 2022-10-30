@@ -8,7 +8,7 @@ Item {
     property string type: "speedometer"
 
     Text {
-        text: centerWidget.parent.type == "speedometer" ? "84" : "1925"
+        text: centerWidget.parent.type == "speedometer" ? Vehicle.speed : Vehicle.rpm
         font.pixelSize: 96
         font.weight: 400
         color: Theme.primaryOrange

@@ -15,6 +15,7 @@ FilledItem {
         anchors.fill: parent
         focus: base.focused
         BigMeter {
+            
         }
 
         TripComputer {
