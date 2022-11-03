@@ -11,11 +11,9 @@ Rectangle {
     width: 320
     height: 320
     radius: width * 0.5
-    color: Theme.secondaryDarkGray
+    color: Theme.secondaryDarkGray 
     anchors.centerIn: parent
     layer.enabled: true
-
-    // BigMeter{}
 
     WidgetLoader {
     }

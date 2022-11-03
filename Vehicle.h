@@ -18,8 +18,8 @@ public:
 
   int speed();
   int rpm();
-  void setSpeed(const int &speed);
-  void setRpm(const int &rpm);
+  Q_INVOKABLE void setSpeed(const int &speed);
+  Q_INVOKABLE void setRpm(const int &rpm);
 
 signals:
   void speedChanged();

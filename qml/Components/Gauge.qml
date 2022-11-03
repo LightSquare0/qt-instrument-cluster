@@ -31,6 +31,7 @@ Rectangle {
     border.color: Theme.secondaryGray
     border.width: 1
 
+
     Item {
         property double minimum: Math.min(base.width, base.height)
 

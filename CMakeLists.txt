@@ -12,7 +12,7 @@ endif()
 include_directories( .
 )
 
-find_package(Qt6 6.4 COMPONENTS Quick Gui Core5Compat REQUIRED)
+find_package(Qt6 6.4 COMPONENTS Quick Gui Core5Compat Positioning REQUIRED)
 qt_standard_project_setup()
 
 qt_add_executable(cluster
@@ -43,6 +43,7 @@ qt_add_qml_module(cluster
 		qml/Utils/FilledItem.qml
 	RESOURCES
     images/MainGradient.png
+    images/Shadow.png
 		icons/gas.svg
 		icons/odometer.svg
 		icons/thermostat.svg
@@ -51,4 +52,4 @@ qt_add_qml_module(cluster
 		fonts/LexendDeca-Regular.ttf
 	)
 
-target_link_libraries(cluster PUBLIC Qt6::Gui Qt6::Quick Qt6::Core5Compat)
+target_link_libraries(cluster PUBLIC Qt6::Gui Qt6::Quick Qt6::Core5Compat Qt6::Positioning)

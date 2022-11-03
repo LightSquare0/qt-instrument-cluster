@@ -14,4 +14,13 @@ Rectangle {
     height: 100
     color: Theme.primaryOrange
     radius: 50
+    layer.enabled: true
+
+    layer.effect: DropShadow {
+        transparentBorder: true
+        horizontalOffset: 0
+        verticalOffset: 0
+        radius: 4
+        color: "#C14600"
+    }
 }

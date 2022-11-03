@@ -22,6 +22,8 @@ void Vehicle::setSpeed(const int &speed)
 
   m_speed = speed;
   emit speedChanged();
+  
+  qDebug() << speed;
 }
 
 void Vehicle::setRpm(const int &rpm)
@@ -31,4 +33,6 @@ void Vehicle::setRpm(const int &rpm)
 
   m_rpm = rpm;
   emit rpmChanged();
+
+  qDebug() << rpm;
 }

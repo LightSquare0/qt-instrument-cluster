@@ -14,6 +14,11 @@ FilledItem {
         currentIndex: 0
         anchors.fill: parent
         focus: base.focused
+
+        onFocusChanged: {
+            console.log(focus, "view");
+            event.accepted = true;
+        }
         BigMeter {
             
         }
