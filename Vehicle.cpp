@@ -1,7 +1,7 @@
 #include "Vehicle.h"
 
 Vehicle::Vehicle(QObject *parent)
-    : QObject(parent), m_speed(40), m_rpm(1900)
+    : QObject(parent), m_speed(0), m_rpm(850)
 {
 }
 

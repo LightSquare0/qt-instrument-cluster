@@ -40,6 +40,9 @@ Control {
             type: "speedometer"
         }
 
+        // Map{}
+        Middle{}
+
         Gauge {
             id: tachometer
 

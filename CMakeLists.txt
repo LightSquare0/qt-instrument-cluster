@@ -30,6 +30,7 @@ qt_add_qml_module(cluster
 		qml/Styles/Theme.qml
 		qml/BottomBar.qml
 		qml/MainView.qml
+		qml/Middle.qml
 		qml/Components/StatProgressBar.qml
 		qml/Components/Stat.qml
 		qml/Components/Gauge.qml
@@ -37,10 +38,12 @@ qt_add_qml_module(cluster
 		qml/Components/WidgetLoader.qml
 		qml/Components/Needle.qml
 		qml/Components/Rotator.qml
+		qml/Components/Map.qml
 		qml/Widgets/BigMeter.qml
 		qml/Widgets/TripComputer.qml
 		qml/Utils/RoundedShape.qml
 		qml/Utils/FilledItem.qml
+		qml/Utils/Triangle.qml
 	RESOURCES
     images/MainGradient.png
     images/Shadow.png
